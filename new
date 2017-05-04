@@ -1,1 +1,2 @@
-
+var dax = new Image();
+dax.src="http://whos.amung.us/widget/muglauser.png";
